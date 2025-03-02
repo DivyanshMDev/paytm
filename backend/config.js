@@ -1,6 +1,5 @@
-//backend/config.js
+require('dotenv').config()
 
-const JWT_SECRET="modisecret";
 module.exports = {
-	JWT_SECRET: "modisecret"
+  jwtSecret: process.env.jwtSecret 
 }
